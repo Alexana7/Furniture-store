@@ -1,0 +1,19 @@
+
+.header {
+  padding-top: 40px;
+  background: var(--footer-bg);
+  background-image: url('./../img/header/header-bg.jpg');
+  background-repeat: no-repeat;
+  aspect-ratio: 1440 / 1084;
+  background-size: cover;
+  color: var(--text-header-color);
+  // max-width: 1440px;
+  // margin: 0 auto;
+  @include retina-bg(url('./../img/header/header-bg@2x.jpg'));
+
+  a {
+    color: var(--text-header-color);
+  }
+}
+  
+

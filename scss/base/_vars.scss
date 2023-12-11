@@ -16,9 +16,16 @@
   --ui-dark-blue:#0D1B39;
   
 
-  --font-main: font-family: 'Gilroy', sans-serif;
-  --font-cards: font-family: 'Inter', sans-serif;
-  --font-footer-accent: font-family: 'DM Sans', sans-serif;
+  --font-main: 'Gilroy', sans-serif;
+  --font-cards: 'Inter', sans-serif;
+  --font-footer-accent: 'DM Sans', sans-serif;
 
+}
 
+@mixin retina-bg($image) {
+  @media
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+      background-image: $image;
+  }
 }

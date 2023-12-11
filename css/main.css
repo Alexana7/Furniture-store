@@ -1,6 +1,6 @@
+@import './../fonts/Gilroy/stylesheet.css';
 /* Reset and base styles  */
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter:wght@400;600&display=swap");
-@import './../fonts/Gilroy/stylesheet.css';
 * {
   padding: 0px;
   margin: 0px;
@@ -92,6 +92,12 @@ html, body {
   color: var(--text-color);
 }
 
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1310px;
+}
+
 :root {
   --text-color: #1E1E1E;
   --accent: #E58411;
@@ -105,7 +111,55 @@ html, body {
   --ui-turquoise:#00D6C9;
   --ui-grey:#7C7C7C;
   --ui-dark-blue:#0D1B39;
-  --font-main: font-family: "Gilroy", sans-serif;
-  --font-cards: font-family: "Inter", sans-serif;
-  --font-footer-accent: font-family: "DM Sans", sans-serif;
+  --font-main: "Gilroy", sans-serif;
+  --font-cards: "Inter", sans-serif;
+  --font-footer-accent: "DM Sans", sans-serif;
+}
+
+.header {
+  padding-top: 40px;
+  background: var(--footer-bg);
+  background-image: url("./../img/header/header-bg.jpg");
+  background-repeat: no-repeat;
+  aspect-ratio: 1440/1084;
+  background-size: cover;
+  color: var(--text-header-color);
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .header {
+    background-image: url("./../img/header/header-bg@2x.jpg");
+  }
+}
+.header a {
+  color: var(--text-header-color);
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: 2fr 8fr 2fr;
+  gap: 20px;
+}
+
+.nav__logo {
+  align-self: center;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.28px;
+  text-transform: capitalize;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 65px;
+  justify-self: center;
+  align-self: center;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.cart {
+  align-self: center;
+  justify-self: end;
 }/*# sourceMappingURL=main.css.map */

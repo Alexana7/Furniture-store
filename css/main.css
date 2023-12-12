@@ -160,6 +160,21 @@ html, body {
 }
 
 .cart {
+  position: relative;
   align-self: center;
   justify-self: end;
+}
+
+.cart__count {
+  position: absolute;
+  top: 3px;
+  right: -6px;
+  display: inline-block;
+  padding: 0 6px;
+  height: 25px;
+  background-color: var(--accent);
+  border-radius: 40px;
+  line-height: 25px;
+  font-family: var(--font-cards);
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */

@@ -1,5 +1,6 @@
 
 .header {
+  position: relative;
   padding-top: 40px;
   background: var(--footer-bg);
   background-image: url('./../img/header/header-bg.jpg');
@@ -43,3 +44,34 @@
     margin: 45px auto 0;
   }
 }
+
+
+// dots
+
+.header__dot {
+  &-sofa {
+    position: absolute;
+    left: 20%;
+    top: 63%;
+  }
+  &-vase {
+    position: absolute;
+    left: 7%;
+    top: 68%;
+  }
+  &-flowerpot {
+    position: absolute;
+    left: 96%;
+    top: 76%;
+  }
+
+  &-drop {
+    position: absolute;
+    left: 55.5%;
+    top: 72%;
+  }
+
+}
+
+
+

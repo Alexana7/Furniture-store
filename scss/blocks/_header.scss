@@ -14,6 +14,32 @@
   a {
     color: var(--text-header-color);
   }
-}
-  
 
+  &__nav {
+    margin-bottom: 86px;
+  }
+
+  &__content {
+    text-align: center;
+    p {
+      margin: 0 auto;
+      max-width: 606px;
+      font-size: 24px;
+      line-height: 1.6; 
+      opacity: 0.8;
+    }
+  }
+
+  &__title {
+    margin-bottom: 14px;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: -0.8px;
+    text-transform: capitalize;
+  }
+
+  &__search{
+    margin: 45px auto 0;
+  }
+}

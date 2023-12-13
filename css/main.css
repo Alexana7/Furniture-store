@@ -98,6 +98,10 @@ html, body {
   max-width: 1310px;
 }
 
+.none {
+  display: none !important;
+}
+
 :root {
   --text-color: #1E1E1E;
   --accent: #E58411;

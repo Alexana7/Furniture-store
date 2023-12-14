@@ -1,0 +1,42 @@
+.benefits {
+  padding: 120px 0;
+
+  &__grid {
+    display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  }
+
+  &__title {
+  max-width: 260px;
+  font-size: 42px;
+  font-weight: 700;
+  text-transform: capitalize;
+  }
+}
+
+.benefit__title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  opacity: 0.9;
+}
+.benefit__desc {
+  margin-bottom: 14px;
+  font-size: 16px;
+  line-height: 1.8;
+  opacity: 0.8;
+}
+.benefit__link {
+  display: inline-flex;
+  gap: 13px;
+  align-items: center;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.85;
+
+  &::after {
+    content: url('./../img/icons/arrow-right.svg');
+    height: 24px;
+  }
+}

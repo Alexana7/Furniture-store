@@ -80,16 +80,23 @@ for (let btn of tabBtns) {
    
     for (let product of tabsProducts) {
 
-       // 1. Show all products of the selected category
-      if (product.dataset.tabValue === this.dataset.tab) {
+      // Get all products on Click
+
+      if (this.dataset.tab === 'all') {
         product.classList.remove('none')
 
-        // 2. Hide other products
       } else {
-        product.classList.add('none')
-      }  
+        //  Show all products of the selected category
+        if (product.dataset.tabValue === this.dataset.tab) {
+          product.classList.remove('none')
+  
+          //  Hide other products
+        } else {
+          product.classList.add('none')
+        }  
+      }
     }
-    
+
     //update swiper
     swiper.update()
 

@@ -16,7 +16,25 @@
         </div>
         
         <ul class="nav-list">
-          <li class="nav-list__item"><a class="nav-list__link" href="#!">Furniture</a></li>
+          <li class="nav-list__item">
+            <a class="nav-list__link nav-list__link--dropdown" href="#!">Furniture</a>
+            <div class="nav-list_sub-nav">
+              <ul class="sub-nav">
+                <li class="sub-nav__item">
+                  <a href="" class="sub-nav__link">Chairs</a>
+                </li>
+                <li class="sub-nav__item">
+                  <a href="" class="sub-nav__link">Beds</a>
+                </li>
+                <li class="sub-nav__item">
+                  <a href="" class="sub-nav__link">Sofa</a>
+                </li>
+                <li class="sub-nav__item">
+                  <a href="" class="sub-nav__link">Lamps</a>
+                </li>
+              </ul>
+            </div>
+          </li>
           <li class="nav-list__item"><a class="nav-list__link" href="#!">Shop</a></li>
           <li class="nav-list__item"><a class="nav-list__link" href="#!">About Us</a></li>
           <li class="nav-list__item"><a class="nav-list__link" href="#!">Contact</a></li>
@@ -25,6 +43,9 @@
             <img src="./img/icons/cart.svg" alt="cart">
             <div class="cart__count">0</div>
           </a>
+          <button id="open-mobile-nav-btn" class="nav__button">
+            <img src="./img/icons/mobile-nav.svg" alt="open menu">
+          </button>
       </nav>
 
       <div class="header__content">
@@ -120,7 +141,8 @@
     </div>
   </header>
   <!-- section benefits -->
-  <section class="benefits">
+
+  <section class="benefits none">
     <div class="container">
       <div class="benefits__grid">
         <h2 class="benefits__title">Why Choosing Us</h2>
@@ -149,7 +171,7 @@
 
     <!-- section products -->
 
-  <section class="products">
+  <section class="products none">
     <div class="container">
       <div class="products__title">Best Selling Product</div>
       <div class="products__tabs">
@@ -763,7 +785,7 @@
 
   <!-- footer -->
 
-  <footer class="footer">
+  <footer class="footer none">
     <div class="container container--small">
        <!-- footer grid -->
       <div class="footer__grid">
@@ -807,6 +829,46 @@
       <!-- footer row -->
     </div>
   </footer>
+
+   <!-- mobile navigation -->
+     
+   <div id="mobile-nav" class="mobile-nav__wrapper">
+    <div class="mobile-nav__header">
+      <a href="#cart" class="mobile-cart">
+        <div class="cart" href="#!" class="cart__img">
+          <img src="./img/icons/cart.svg" alt="cart">
+          <div class="cart__count">0</div>
+        </div>
+        Cart
+      </a>
+      <button id="close-mobile-nav-btn" class="mobile-nav__button-close"><img src="./img/icons/close.svg" alt="close-navigation"></button>
+    </div>
+    
+    <ul class="mobile-nav">
+      <li class="mobile-nav__item">
+        <a class="mobile-nav__link mobile-nav__link--dropdown" href="#!">Furniture</a>
+          <ul class="mobile-sub-nav">
+            <li class="mobile-sub-nav__item">
+              <a href="" class="mobile-sub-nav__link">Chairs</a>
+            </li>
+            <li class="mobile-sub-nav__item">
+              <a href="" class="mobile-sub-nav__link">Beds</a>
+            </li>
+            <li class="mobile-sub-nav__item">
+              <a href="" class="mobile-sub-nav__link">Sofa</a>
+            </li>
+            <li class="mobile-sub-nav__item">
+              <a href="" class="mobile-sub-nav__link">Lamps</a>
+            </li>
+          </ul>
+      </li>
+      <li class="mobile-nav__item"><a class="mobile-nav__link" href="#!">Shop</a></li>
+      <li class="mobile-nav__item"><a class="mobile-nav__link" href="#!">About Us</a></li>
+      <li class="mobile-nav__item"><a class="mobile-nav__link" href="#!">Contact</a></li>
+    </ul>   
+   </div>
+
+ <!-- // mobile navigation -->
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/mian.js"></script>

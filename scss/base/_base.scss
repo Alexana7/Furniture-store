@@ -3,11 +3,6 @@
 html, body {
   font-family: var(--font-main);
   color: var(--text-color);
-
-}
-
-body {
-  padding-bottom: 50vh;
 }
 
 .container {
@@ -17,10 +12,8 @@ body {
 
   &--small {
     max-width: 1094px;
-
   }
 }
-
 
 .none {
   display: none !important;

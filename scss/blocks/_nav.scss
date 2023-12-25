@@ -8,5 +8,12 @@
 .nav__logo {
   align-self: center;
 }
+.nav__button {
+  display: none;
+  
+  @include tablet {
+    display: block;
+  }
+}
 
 

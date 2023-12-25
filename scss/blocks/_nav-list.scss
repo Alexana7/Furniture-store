@@ -7,4 +7,54 @@
   align-self: center;
   font-weight: 500;
   font-size: 18px;
+
+
+  @include tablet {
+    display: none;
+  }
+
+  &__link {
+    transition: color 0.2s ease-in;
+    
+    &:hover {
+      color: var(--accent);
+    
+    }
+
+    &--dropdown {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      &::after {
+        content: url(./../img/icons/dropdown-arrow.svg);
+        height: 18px;  
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+    padding-bottom: 5px;
+
+  }
+}
+
+.nav-list_sub-nav {
+  opacity: 0;
+  min-width: 120px;
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+
+  transform: translateY(10%);
+  transition: all 0.2s ease-in;
+}
+
+.nav-list__item:hover .nav-list_sub-nav {
+  pointer-events: all;
+  opacity: 1;
+  transform: translateY(0%)
+
 }

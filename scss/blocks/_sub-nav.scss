@@ -1,0 +1,27 @@
+.sub-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+  padding:15px 15px 30px 15px;
+  border-radius: 10px;
+  background-color: var(--footer-bg);
+  color: var(--text-footer-color);
+  font-size: 16px;
+
+
+  a {
+    color: var(--text-footer-color);
+
+  }
+}
+.sub-nav__item {
+  
+}
+.sub-nav__link {
+  transition: color 0.2s ease-in;
+
+  &:hover {
+    color: var(--accent);
+  }
+}

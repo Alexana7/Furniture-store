@@ -57,3 +57,41 @@ const swiper = new Swiper('.swiper', {
   },
 
 });
+
+
+//tabs
+
+const tabBtns = document.querySelectorAll('[data-tab]');
+const tabsProducts = document.querySelectorAll('[data-tab-value]');
+
+for (let btn of tabBtns) {
+  btn.addEventListener('click', function() {
+
+    //remove active class for all btns
+    for (let btn of tabBtns) {
+      btn.classList.remove('tab-controls__btn--active');
+    }
+
+    //add active class
+    this.classList.add('tab-controls__btn--active');
+
+
+    // get selected category products
+   
+    for (let product of tabsProducts) {
+
+       // 1. Show all products of the selected category
+      if (product.dataset.tabValue === this.dataset.tab) {
+        product.classList.remove('none')
+
+        // 2. Hide other products
+      } else {
+        product.classList.add('none')
+      }  
+    }
+    
+    //update swiper
+    swiper.update()
+
+  })
+}

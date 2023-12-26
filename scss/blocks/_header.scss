@@ -10,21 +10,30 @@
   // max-width: 1440px;
   // margin: 0 auto;
   @include retina-bg(url('./../img/header/header-bg@2x.jpg'));
+  
 
   a {
     color: var(--text-header-color);
   }
 
+  @include mobile-m() {
+    padding-top: 20px;
+    padding-bottom: 240px;
+    background-position: center;
+    aspect-ratio: unset;
+  }
+
   &__nav {
-    margin-bottom: 86px;
+    margin-bottom: clamp(20px, 0.071rem + 5.89vw, 86px)
   }
 
   &__content {
     text-align: center;
     p {
       margin: 0 auto;
+      text-wrap: balance;
       max-width: 606px;
-      font-size: 24px;
+      font-size: clamp(16px, 0.857rem + 0.71vw, 24px);
       line-height: 1.6; 
       opacity: 0.8;
     }
@@ -32,7 +41,8 @@
 
   &__title {
     margin-bottom: 14px;
-    font-size: 80px;
+    text-wrap: balance;
+    font-size: clamp(28px, 1.179rem + 2.86vw, 80px);
     font-weight: 700;
     line-height: 1.3;
     letter-spacing: -0.8px;
@@ -41,36 +51,37 @@
 
   &__search{
     margin: 45px auto 0;
+
   }
-
 }
-
 
 // dots
 
 .header__dot {
-  &-sofa {
-    position: absolute;
+  position: absolute;
+
+  @include mobile-xl() {
+    display: none;
+  }
+
+
+  &--sofa {
     left: 20%;
     top: 63%;
   }
-  &-vase {
-    position: absolute;
+  &--vase { 
     left: 7%;
     top: 68%;
   }
-  &-flowerpot {
-    position: absolute;
+  &--flowerpot {
     left: 96%;
     top: 76%;
   }
 
-  &-drop {
-    position: absolute;
+  &--drop { 
     left: 55.5%;
     top: 72%;
   }
-
 }
 
 
